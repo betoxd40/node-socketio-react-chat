@@ -14,9 +14,7 @@ class Chat extends Component {
             addMessage(data);
         });
         const addMessage = data => {
-            console.log('addMessage', data);
             this.setState({ messages: [...this.state.messages, data] });
-            console.log(this.state.messages);
         };
     }
     sendMessage = ev => {
